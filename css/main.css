@@ -1,0 +1,30 @@
+div.window{
+
+    height: 160px;
+    width: 160px;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.images > img{
+    position: absolute;
+    transition: all 1s;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 160px;
+}
+
+/* 三种状态 */
+.enter{
+    transform: translateX(100%)
+}
+.leave{
+    transform: translateX(-100%);
+    z-index: 1;
+}
+.current{
+    transform: translateX(0);
+    z-index: 1;
+}
